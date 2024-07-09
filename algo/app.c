@@ -47,7 +47,7 @@ int main() {
     }
     printf("somme : %d",somme);
     
-    printf("Salut");
+    printf("Salutt");
 
     
 
