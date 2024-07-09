@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-void toBinaire();
-void toHexa();
+
 int main() {
     int notes[15] = {8, 16, 20, 14, 7, 14, 18, 2, 6, 8, 19, 15, 16, 18, 17};
     
@@ -21,10 +20,32 @@ int main() {
         printf("%d\n",notes[i]);
     }
 
+    int meilleure_note = notes[0];
 
-    printf("\n\n");
+    for(i=0;i<15;i++){
+        if(notes[i]>meilleure_note){
+            meilleure_note = notes[i];
+        }
+    }
+
+    printf("meilleure note : %d\n",meilleure_note);
 
 
+    int pire_note = notes[0];
+
+    for(i=0;i<15;i++){
+        if(notes[i]<pire_note){
+            pire_note=notes[i];
+        }
+    }
+
+        printf("pire note : %d\n",pire_note);
+
+    int somme = 0;
+    for(i=0;i<15;i++){
+        somme = somme + notes[i];
+    }
+    printf("somme : %d",somme);
     
 
     
