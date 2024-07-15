@@ -1,4 +1,4 @@
-#include<stdlib.h> // impoter dépendance
+#include<stdlib.h> // importer dépendance
 #include<stdio.h>
 
 
@@ -59,7 +59,7 @@ if(triDichotomique(arr,valeurachercher,nbrcases)){
 }
 
 
-
+free(arr);
 }
 
 
